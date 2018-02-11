@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/vendor/owl.carousel.css">
     <link rel="stylesheet" href="css/vendor/owl.transitions.css">
     <link rel="stylesheet" href="css/style.css">
+    <?php include('form.php');?>
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body class="single">
@@ -62,8 +63,8 @@
 						<h1 class="author-name">Dusselfdorf</h1>
 						<h6 class="sub-title"><span id="typeText"></span></h6>
 						<div class="hero-btn">
-							<a class="btn btn-default rex-primary-btn-effect" href="#about" role="button"><span>Explore</span></a>
-							<a class="btn btn-default rex-primary-btn-effect" href="img/bcard.png" role="button">Download Business Card</a>
+							<a class="btn btn-default rex-primary-btn-effect-No" href="#about" role="button"><span>Explore</span></a>
+							<a class="btn btn-default rex-primary-btn-effect-No" href="img/bcard.png" role="button">Download Business Card</a>
 						</div>
 					</div>
 				</div>
@@ -233,7 +234,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="map">
-					<img src="img/map.jpg" alt="">
+					<img src="img/map.png" alt="">
+					<!-- <iframe src="https://www.google.co.in/maps/place/5,+Deepthi+Sree+Nagar+Rd,+PJR+Colony,+Durga+Estates,+Miyapur,+Hyderabad,+Telangana+500050/@17.4992079,78.3364096,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb9288217eb303:0x83f75a3750c07bc5!8m2!3d17.4992028!4d78.3385983?hl=en"></iframe> -->
 				</div>
 				<div class="address col-md-4">
 					<ul class="list-group">
@@ -257,21 +259,21 @@
 		<br>
 		<div>
 			<h4 class="title">Feel Free To Contact Us</h4>
-			<form class="contact-forms" action="form.php">
+			<form class="contact-forms" action="<?=$_SERVER['PHP_SELF']?>">
 				<div class="row">
 					<div class="col-md-6">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Name">
+							<input type="text" class="form-control" name="Name" placeholder="Name">
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Email">
+							<input type="email" class="form-control" name="Email" placeholder="Email">
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Phone">
+							<input type="text" class="form-control" name="Phone" placeholder="Phone">
 						</div>
 					</div>
 					<div class="col-md-6">
-						<textarea class="form-control" rows="6" placeholder="Message"></textarea>
+						<textarea class="form-control" rows="6" name="Message" placeholder="Message"></textarea>
 					</div>
 				</div>
 			</form>
@@ -285,7 +287,7 @@
 					<footer>
 						<div class="row">
 							<div class="col-md-12">
-								<p>Copyleft 2018. A copied artwork by Joel Vinay Kumar</p>
+								<p>Copyleft 2018. A copied artwork by <b><a href="http://joelvinaykumar.github.io">Joel Vinay Kumar</a></b></p>
 							</div>
 						</div>
 					</footer>
