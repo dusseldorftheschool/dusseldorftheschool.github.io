@@ -3560,6 +3560,7 @@ tbody.collapse.in {
 .nav {
   margin-bottom: 0;
   padding-left: 0;
+  display: inline-table;
   list-style: none; }
   .nav:before, .nav:after {
     content: " ";
@@ -6365,8 +6366,7 @@ div.loading img {
 
 .header-two, .header-three {
   padding-top: 30px;
-  background: url("http://placehold.it/1919x504");
-  background: url("http://placehold.it/1919x504");
+  background: url("../img/balloon.png");
   background-color: #4dbfd9;
   background-position: top;
   background-repeat: no-repeat;
@@ -6415,7 +6415,8 @@ div.loading img {
 
 nav {
   min-height: 55px;
-  box-shadow: 0.139px 0.99px 3px 1px rgba(0, 1, 1, 0.118); }
+  box-shadow: 0.139px 0.99px 3px 1px rgba(0, 1, 1, 0.118);
+   }
 
 .one-page .active .navicon {
   color: transparent !important;
